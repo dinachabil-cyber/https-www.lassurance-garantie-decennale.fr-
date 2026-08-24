@@ -470,7 +470,147 @@ instantané, comparez les tarifs et souscrivez directement depuis votre ordinate
                                     <strong>Oui.</strong> Les auto-entrepreneurs exerçant une activité de construction sont soumis à la même obligation d'assurance décennale que les autres professionnels du bâtiment. Des formules spécifiques avec des cotisations calculées sur le chiffre d'affaires réellement déclaré sont disponibles, démarrant généralement autour de <strong>600€ à 800€/an</strong> pour des activités à faible risque.
                                 </p>
                             </div>
+<!-- FAQ 11 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-wrench text-yellow-500 mr-2"></i>
+        C'est quoi exactement l'assurance décennale pour un plombier ?
+    </h3>
+    <p class="text-base text-gray-700">
+        L'assurance décennale plombier est une garantie obligatoire qui couvre les dommages
+        compromettant la solidité d'un ouvrage ou le rendant impropre à sa destination pendant
+        dix ans après la réception des travaux. Elle peut notamment concerner certaines
+        installations de plomberie incorporées à la construction.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Concrètement, un plombier qui installe un réseau d'alimentation en eau encastré dans
+        une dalle engage sa responsabilité décennale lorsque les conditions légales sont réunies.
+        Si une fuite invisible provoque des dommages importants ou rend le logement impropre
+        à son usage, la garantie peut intervenir pour indemniser le maître d'ouvrage.
+        L'article 1792 du Code civil pose le principe de responsabilité décennale des constructeurs.
+    </p>
+</div>
 
+<!-- FAQ 12 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
+        Est-ce que l'assurance décennale plombier est vraiment obligatoire avant d'ouvrir un chantier ?
+    </h3>
+    <p class="text-base text-gray-700">
+        <strong>Oui.</strong> L'assurance décennale est obligatoire pour les plombiers lorsqu'ils
+        réalisent des travaux entrant dans le champ de la responsabilité décennale. L'attestation
+        d'assurance doit pouvoir être présentée au maître d'ouvrage avant le démarrage des travaux.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Cette obligation concerne les professionnels du bâtiment quel que soit leur statut
+        juridique, y compris les micro-entrepreneurs lorsque leur activité est soumise à cette
+        obligation. L'article L. 241-1 du Code des assurances encadre cette obligation d'assurance.
+    </p>
+</div>
+
+<!-- FAQ 13 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
+        Quel est le tarif d'une assurance décennale pour un plombier en France ?
+    </h3>
+    <p class="text-base text-gray-700">
+        Le tarif d'une assurance décennale plombier varie généralement selon le chiffre d'affaires,
+        l'expérience professionnelle, la nature des travaux réalisés, la zone d'activité et
+        l'historique de sinistres. Pour certains profils, les cotisations peuvent se situer autour
+        de quelques centaines à plusieurs milliers d'euros par an.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Un plombier débutant avec un chiffre d'affaires limité peut bénéficier d'un tarif plus
+        accessible, tandis que les activités comportant des travaux plus techniques ou présentant
+        des risques importants peuvent entraîner une cotisation plus élevée. Comparer plusieurs
+        offres permet de vérifier à la fois le prix, les garanties, les franchises et les exclusions.
+    </p>
+</div>
+
+<!-- FAQ 14 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-user-slash text-yellow-500 mr-2"></i>
+        Un plombier résilié pour non-paiement peut-il retrouver une assurance décennale ?
+    </h3>
+    <p class="text-base text-gray-700">
+        <strong>Oui.</strong> Un plombier dont le contrat a été résilié pour non-paiement peut
+        rechercher une nouvelle assurance décennale. Cependant, une résiliation peut rendre
+        l'accès au marché classique plus difficile et entraîner des conditions tarifaires ou
+        contractuelles particulières.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Certains assureurs et courtiers spécialisés étudient les profils ayant connu une
+        résiliation. Pour maximiser ses chances, il est important de présenter un dossier complet,
+        de régulariser sa situation lorsque cela est possible et de fournir l'historique des
+        assurances et des sinistres. Nos experts peuvent vous accompagner dans la recherche
+        d'une solution adaptée à votre situation.
+    </p>
+</div>
+
+<!-- FAQ 15 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+        Comment souscrire une assurance décennale plombier rapidement avant un chantier urgent ?
+    </h3>
+    <p class="text-base text-gray-700">
+        Pour souscrire rapidement une assurance décennale plombier, il est conseillé de préparer
+        dès le départ les documents nécessaires : justificatif d'immatriculation de l'entreprise,
+        descriptif précis des activités, chiffre d'affaires, expérience professionnelle et
+        historique des sinistres.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Certains assureurs peuvent étudier un dossier rapidement et délivrer une attestation
+        après validation du dossier et du contrat. La rapidité dépend principalement de la
+        complétude des informations transmises. Une attestation provisoire ne couvre que la
+        période et les activités prévues par le contrat concerné.
+    </p>
+</div>
+
+<!-- FAQ 16 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
+        Quelle différence entre l'assurance décennale plombier et la responsabilité civile professionnelle ?
+    </h3>
+    <p class="text-base text-gray-700">
+        L'assurance décennale et la responsabilité civile professionnelle sont deux garanties
+        différentes mais complémentaires. La garantie décennale couvre, dans les conditions
+        prévues par la loi, certains dommages affectant un ouvrage après sa réception pendant
+        une période de dix ans.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        La RC professionnelle intervient notamment pour les dommages causés aux tiers ou aux
+        biens pendant l'activité professionnelle. Par exemple, si un plombier endommage
+        accidentellement un équipement ou une canalisation pendant un chantier, la RC
+        professionnelle peut être concernée. En revanche, un désordre relevant de la
+        responsabilité décennale après réception peut relever de l'assurance décennale.
+    </p>
+</div>
+
+<!-- FAQ 17 -->
+<div class="border border-gray-200 rounded-xl p-6">
+    <h3 class="text-lg font-bold text-gray-900 mb-3">
+        <i class="fas fa-ban text-yellow-500 mr-2"></i>
+        Quelles exclusions fréquentes peut-on trouver dans un contrat d'assurance décennale plombier ?
+    </h3>
+    <p class="text-base text-gray-700">
+        Les exclusions dépendent du contrat et des conditions générales et particulières.
+        Elles peuvent notamment concerner certaines activités ou certains travaux qui n'ont
+        pas été déclarés à l'assureur, ainsi que des situations expressément exclues par
+        les conditions contractuelles.
+    </p>
+    <p class="text-base text-gray-700 mt-4">
+        Il est donc essentiel de déclarer précisément l'ensemble des activités exercées par
+        l'entreprise et de vérifier les garanties avant la souscription. Les franchises,
+        plafonds, exclusions et conditions de prise en charge doivent être examinés avec
+        attention afin de s'assurer que le contrat correspond réellement aux travaux réalisés
+        par le plombier.
+    </p>
+</div>
                         </div>
                     </div>
 
