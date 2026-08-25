@@ -360,259 +360,1083 @@ instantané, comparez les tarifs et souscrivez directement depuis votre ordinate
                         </div>
                     </div>
 
-                    {{-- ============================================================ --}}
-                    {{-- FAQ SECTION — [NOUVEAU] 10 questions pour la page d'accueil  --}}
-                    {{-- ============================================================ --}}
-                    <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
-                        <div class="text-center mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-bold text-gradient mb-4">Questions fréquentes sur l'assurance décennale en ligne</h2>
-                            <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
-                        </div>
+                    <!-- ==========================================================
+     FAQ SECTION
+     ========================================================== -->
 
-                        <div class="space-y-6">
+<div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-question-circle text-yellow-500 mr-2"></i>
-                                    Qu'est-ce que l'assurance décennale en ligne exactement ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    L'assurance décennale en ligne est un contrat de responsabilité civile décennale que vous pouvez souscrire entièrement par internet, sans vous déplacer. Elle offre les mêmes garanties qu'une assurance traditionnelle mais avec un processus simplifié et une souscription 100% digitale, avec une attestation provisoire délivrée sous 24 à 48 heures.
-                                </p>
-                            </div>
+    <!-- ======================================================
+         TITLE
+         ====================================================== -->
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
-                                    Comment obtenir un devis assurance décennale en ligne ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    Il suffit de remplir notre formulaire en ligne avec les informations sur votre entreprise, votre activité, votre chiffre d'affaires prévisionnel et votre expérience. Vous recevez instantanément plusieurs propositions de tarif que vous pouvez comparer avant de souscrire. Le processus est 100% en ligne et ne nécessite aucun rendez-vous.
-                                </p>
-                            </div>
+    <div class="text-center mb-8">
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-                                    L'attestation assurance décennale en ligne est-elle valable légalement ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    <strong>Absolument.</strong> Une attestation assurance décennale en ligne a exactement la même valeur légale qu'une attestation papier. Elle est reconnue par tous les maîtres d'ouvrage et peut être présentée lors de vos démarches administratives ou pour répondre à des appels d'offres, à condition que l'assureur soit agréé par l'ACPR.
-                                </p>
-                            </div>
+        <h2 class="text-2xl lg:text-3xl font-bold text-gradient mb-4">
+            Questions fréquentes sur l'assurance décennale en ligne
+        </h2>
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-clock text-yellow-500 mr-2"></i>
-                                    Combien de temps faut-il pour recevoir mon attestation après souscription ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    Après validation de votre dossier et paiement de votre première cotisation, vous recevez généralement votre attestation provisoire par email sous <strong>24 à 48 heures maximum</strong>. Dans certains cas urgents, une délivrance express le jour même peut être organisée. Votre attestation est téléchargeable au format PDF depuis votre espace personnel sécurisé.
-                                </p>
-                            </div>
+        <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
-                                    Quel est le coût d'une assurance décennale en ligne ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    Le tarif varie selon votre métier, votre chiffre d'affaires, votre expérience et votre historique de sinistres. En moyenne, les cotisations démarrent à partir de <strong>75€ par mois</strong> pour un auto-entrepreneur débutant. L'assurance décennale en ligne est généralement 15 à 30% moins chère qu'une formule traditionnelle grâce à la réduction des coûts de structure.
-                                </p>
-                            </div>
+    </div>
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-user-slash text-yellow-500 mr-2"></i>
-                                    Puis-je souscrire si j'ai été résilié par mon ancien assureur ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    <strong>Oui.</strong> Notre réseau de partenaires comprend des compagnies spécialisées dans les profils résiliés. Que votre résiliation soit due à un non-paiement ou à des sinistres, nous trouvons une solution de contrat assurance décennale en ligne adaptée à votre situation actuelle.
-                                </p>
-                            </div>
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-tools text-yellow-500 mr-2"></i>
-                                    Quels métiers peuvent souscrire une assurance décennale en ligne ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    Tous les métiers du bâtiment sont éligibles : électricien, plombier, maçon, couvreur, menuisier, peintre, plaquiste, carreleur, charpentier, architecte, bureau d'études, entreprise générale du bâtiment, etc. Chaque corps d'état bénéficie d'un devis personnalisé selon ses risques spécifiques.
-                                </p>
-                            </div>
+    <!-- ======================================================
+         FAQ CONTAINER
+         ====================================================== -->
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-tag text-yellow-500 mr-2"></i>
-                                    Quelle est la différence de prix entre assurance décennale en ligne et traditionnelle ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    L'assurance décennale en ligne est généralement <strong>15 à 30% moins chère</strong> que les formules traditionnelles. Pour un plombier débutant, comptez entre 800€ et 1 500€/an en ligne contre 1 200€ à 2 200€ via un réseau traditionnel. Pour un maçon, les tarifs en ligne oscillent entre 1 500€ et 3 000€ annuels contre 2 000€ à 4 500€ en agence.
-                                </p>
-                            </div>
+    <div id="faq-container" class="space-y-6">
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
-                                    Puis-je résilier mon assurance décennale en ligne avant l'échéance annuelle ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    Depuis la <strong>loi Hamon de 2014</strong>, vous pouvez résilier à tout moment après la première année de contrat, sans frais ni pénalités, via votre espace client ou par lettre recommandée. L'assureur dispose d'un délai de 30 jours pour rendre effective la résiliation. Assurez-vous toutefois d'avoir souscrit un nouveau contrat pour éviter toute interruption de garantie.
-                                </p>
-                            </div>
 
-                            <div class="border border-gray-200 rounded-xl p-6">
-                                <h3 class="text-lg font-bold text-gray-900 mb-3">
-                                    <i class="fas fa-user-check text-yellow-500 mr-2"></i>
-                                    Les auto-entrepreneurs peuvent-ils souscrire une assurance décennale en ligne ?
-                                </h3>
-                                <p class="text-base text-gray-700">
-                                    <strong>Oui.</strong> Les auto-entrepreneurs exerçant une activité de construction sont soumis à la même obligation d'assurance décennale que les autres professionnels du bâtiment. Des formules spécifiques avec des cotisations calculées sur le chiffre d'affaires réellement déclaré sont disponibles, démarrant généralement autour de <strong>600€ à 800€/an</strong> pour des activités à faible risque.
-                                </p>
-                            </div>
-<!-- FAQ 11 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-wrench text-yellow-500 mr-2"></i>
-        C'est quoi exactement l'assurance décennale pour un plombier ?
-    </h3>
-    <p class="text-base text-gray-700">
-        L'assurance décennale plombier est une garantie obligatoire qui couvre les dommages
-        compromettant la solidité d'un ouvrage ou le rendant impropre à sa destination pendant
-        dix ans après la réception des travaux. Elle peut notamment concerner certaines
-        installations de plomberie incorporées à la construction.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Concrètement, un plombier qui installe un réseau d'alimentation en eau encastré dans
-        une dalle engage sa responsabilité décennale lorsque les conditions légales sont réunies.
-        Si une fuite invisible provoque des dommages importants ou rend le logement impropre
-        à son usage, la garantie peut intervenir pour indemniser le maître d'ouvrage.
-        L'article 1792 du Code civil pose le principe de responsabilité décennale des constructeurs.
-    </p>
+        <!-- ==================================================
+             FAQ 1
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-question-circle text-yellow-500 mr-2"></i>
+                    Qu'est-ce que l'assurance décennale en ligne exactement ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    L'assurance décennale en ligne est un contrat de responsabilité civile décennale que vous pouvez souscrire entièrement par internet, sans vous déplacer. Elle offre les mêmes garanties qu'une assurance traditionnelle mais avec un processus simplifié et une souscription 100% digitale, avec une attestation provisoire délivrée sous 24 à 48 heures.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 2
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
+                    Comment obtenir un devis assurance décennale en ligne ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Il suffit de remplir notre formulaire en ligne avec les informations sur votre entreprise, votre activité, votre chiffre d'affaires prévisionnel et votre expérience. Vous recevez instantanément plusieurs propositions de tarif que vous pouvez comparer avant de souscrire. Le processus est 100% en ligne et ne nécessite aucun rendez-vous.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 3
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+                    L'attestation assurance décennale en ligne est-elle valable légalement ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    <strong>Absolument.</strong> Une attestation assurance décennale en ligne a exactement la même valeur légale qu'une attestation papier. Elle est reconnue par tous les maîtres d'ouvrage et peut être présentée lors de vos démarches administratives ou pour répondre à des appels d'offres, à condition que l'assureur soit agréé par l'ACPR.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 4
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-clock text-yellow-500 mr-2"></i>
+                    Combien de temps faut-il pour recevoir mon attestation après souscription ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Après validation de votre dossier et paiement de votre première cotisation, vous recevez généralement votre attestation provisoire par email sous <strong>24 à 48 heures maximum</strong>. Dans certains cas urgents, une délivrance express le jour même peut être organisée. Votre attestation est téléchargeable au format PDF depuis votre espace personnel sécurisé.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 5
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
+                    Quel est le coût d'une assurance décennale en ligne ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Le tarif varie selon votre métier, votre chiffre d'affaires, votre expérience et votre historique de sinistres. En moyenne, les cotisations démarrent à partir de <strong>75€ par mois</strong> pour un auto-entrepreneur débutant. L'assurance décennale en ligne est généralement 15 à 30% moins chère qu'une formule traditionnelle grâce à la réduction des coûts de structure.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 6
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-user-slash text-yellow-500 mr-2"></i>
+                    Puis-je souscrire si j'ai été résilié par mon ancien assureur ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    <strong>Oui.</strong> Notre réseau de partenaires comprend des compagnies spécialisées dans les profils résiliés. Que votre résiliation soit due à un non-paiement ou à des sinistres, nous trouvons une solution de contrat assurance décennale en ligne adaptée à votre situation actuelle.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 7
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-tools text-yellow-500 mr-2"></i>
+                    Quels métiers peuvent souscrire une assurance décennale en ligne ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Tous les métiers du bâtiment sont éligibles : électricien, plombier, maçon, couvreur, menuisier, peintre, plaquiste, carreleur, charpentier, architecte, bureau d'études, entreprise générale du bâtiment, etc. Chaque corps d'état bénéficie d'un devis personnalisé selon ses risques spécifiques.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 8
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-tag text-yellow-500 mr-2"></i>
+                    Quelle est la différence de prix entre assurance décennale en ligne et traditionnelle ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    L'assurance décennale en ligne est généralement <strong>15 à 30% moins chère</strong> que les formules traditionnelles. Pour un plombier débutant, comptez entre 800€ et 1 500€/an en ligne contre 1 200€ à 2 200€ via un réseau traditionnel. Pour un maçon, les tarifs en ligne oscillent entre 1 500€ et 3 000€ annuels contre 2 000€ à 4 500€ en agence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 9
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
+                    Puis-je résilier mon assurance décennale en ligne avant l'échéance annuelle ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Depuis la <strong>loi Hamon de 2014</strong>, vous pouvez résilier à tout moment après la première année de contrat, sans frais ni pénalités, via votre espace client ou par lettre recommandée. L'assureur dispose d'un délai de 30 jours pour rendre effective la résiliation. Assurez-vous toutefois d'avoir souscrit un nouveau contrat pour éviter toute interruption de garantie.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 10
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-user-check text-yellow-500 mr-2"></i>
+                    Les auto-entrepreneurs peuvent-ils souscrire une assurance décennale en ligne ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    <strong>Oui.</strong> Les auto-entrepreneurs exerçant une activité de construction sont soumis à la même obligation d'assurance décennale que les autres professionnels du bâtiment. Des formules spécifiques avec des cotisations calculées sur le chiffre d'affaires réellement déclaré sont disponibles, démarrant généralement autour de <strong>600€ à 800€/an</strong> pour des activités à faible risque.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 11
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-wrench text-yellow-500 mr-2"></i>
+                    C'est quoi exactement l'assurance décennale pour un plombier ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    L'assurance décennale plombier est une garantie obligatoire qui couvre les dommages
+                    compromettant la solidité d'un ouvrage ou le rendant impropre à sa destination pendant
+                    dix ans après la réception des travaux. Elle peut notamment concerner certaines
+                    installations de plomberie incorporées à la construction.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Concrètement, un plombier qui installe un réseau d'alimentation en eau encastré dans
+                    une dalle engage sa responsabilité décennale lorsque les conditions légales sont réunies.
+                    Si une fuite invisible provoque des dommages importants ou rend le logement impropre
+                    à son usage, la garantie peut intervenir pour indemniser le maître d'ouvrage.
+                    L'article 1792 du Code civil pose le principe de responsabilité décennale des constructeurs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 12
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
+                    Est-ce que l'assurance décennale plombier est vraiment obligatoire avant d'ouvrir un chantier ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    <strong>Oui.</strong> L'assurance décennale est obligatoire pour les plombiers lorsqu'ils
+                    réalisent des travaux entrant dans le champ de la responsabilité décennale. L'attestation
+                    d'assurance doit pouvoir être présentée au maître d'ouvrage avant le démarrage des travaux.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Cette obligation concerne les professionnels du bâtiment quel que soit leur statut
+                    juridique, y compris les micro-entrepreneurs lorsque leur activité est soumise à cette
+                    obligation. L'article L. 241-1 du Code des assurances encadre cette obligation d'assurance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 13
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
+                    Quel est le tarif d'une assurance décennale pour un plombier en France ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Le tarif d'une assurance décennale plombier varie généralement selon le chiffre d'affaires,
+                    l'expérience professionnelle, la nature des travaux réalisés, la zone d'activité et
+                    l'historique de sinistres. Pour certains profils, les cotisations peuvent se situer autour
+                    de quelques centaines à plusieurs milliers d'euros par an.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Un plombier débutant avec un chiffre d'affaires limité peut bénéficier d'un tarif plus
+                    accessible, tandis que les activités comportant des travaux plus techniques ou présentant
+                    des risques importants peuvent entraîner une cotisation plus élevée. Comparer plusieurs
+                    offres permet de vérifier à la fois le prix, les garanties, les franchises et les exclusions.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 14
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-user-slash text-yellow-500 mr-2"></i>
+                    Un plombier résilié pour non-paiement peut-il retrouver une assurance décennale ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    <strong>Oui.</strong> Un plombier dont le contrat a été résilié pour non-paiement peut
+                    rechercher une nouvelle assurance décennale. Cependant, une résiliation peut rendre
+                    l'accès au marché classique plus difficile et entraîner des conditions tarifaires ou
+                    contractuelles particulières.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Certains assureurs et courtiers spécialisés étudient les profils ayant connu une
+                    résiliation. Pour maximiser ses chances, il est important de présenter un dossier complet,
+                    de régulariser sa situation lorsque cela est possible et de fournir l'historique des
+                    assurances et des sinistres. Nos experts peuvent vous accompagner dans la recherche
+                    d'une solution adaptée à votre situation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 15
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+                    Comment souscrire une assurance décennale plombier rapidement avant un chantier urgent ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Pour souscrire rapidement une assurance décennale plombier, il est conseillé de préparer
+                    dès le départ les documents nécessaires : justificatif d'immatriculation de l'entreprise,
+                    descriptif précis des activités, chiffre d'affaires, expérience professionnelle et
+                    historique des sinistres.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Certains assureurs peuvent étudier un dossier rapidement et délivrer une attestation
+                    après validation du dossier et du contrat. La rapidité dépend principalement de la
+                    complétude des informations transmises. Une attestation provisoire ne couvre que la
+                    période et les activités prévues par le contrat concerné.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 16
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
+                    Quelle différence entre l'assurance décennale plombier et la responsabilité civile professionnelle ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    L'assurance décennale et la responsabilité civile professionnelle sont deux garanties
+                    différentes mais complémentaires. La garantie décennale couvre, dans les conditions
+                    prévues par la loi, certains dommages affectant un ouvrage après sa réception pendant
+                    une période de dix ans.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    La RC professionnelle intervient notamment pour les dommages causés aux tiers ou aux
+                    biens pendant l'activité professionnelle. Par exemple, si un plombier endommage
+                    accidentellement un équipement ou une canalisation pendant un chantier, la RC
+                    professionnelle peut être concernée. En revanche, un désordre relevant de la
+                    responsabilité décennale après réception peut relever de l'assurance décennale.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             FAQ 17
+             ================================================== -->
+
+        <div class="faq-item border border-gray-200 rounded-xl p-6">
+
+            <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+
+                <span>
+                    <i class="fas fa-ban text-yellow-500 mr-2"></i>
+                    Quelles exclusions fréquentes peut-on trouver dans un contrat d'assurance décennale plombier ?
+                </span>
+
+                <span class="faq-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+
+            </h3>
+
+            <div class="faq-answer">
+
+                <p class="text-base text-gray-700">
+                    Les exclusions dépendent du contrat et des conditions générales et particulières.
+                    Elles peuvent notamment concerner certaines activités ou certains travaux qui n'ont
+                    pas été déclarés à l'assureur, ainsi que des situations expressément exclues par
+                    les conditions contractuelles.
+                </p>
+
+                <p class="text-base text-gray-700 mt-4">
+                    Il est donc essentiel de déclarer précisément l'ensemble des activités exercées par
+                    l'entreprise et de vérifier les garanties avant la souscription. Les franchises,
+                    plafonds, exclusions et conditions de prise en charge doivent être examinés avec
+                    attention afin de s'assurer que le contrat correspond réellement aux travaux réalisés
+                    par le plombier.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ======================================================
+         PAGINATION
+         ====================================================== -->
+
+    <div
+        id="faq-pagination"
+        class="flex justify-center items-center gap-2 mt-10 flex-wrap">
+    </div>
+
 </div>
 
-<!-- FAQ 12 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
-        Est-ce que l'assurance décennale plombier est vraiment obligatoire avant d'ouvrir un chantier ?
-    </h3>
-    <p class="text-base text-gray-700">
-        <strong>Oui.</strong> L'assurance décennale est obligatoire pour les plombiers lorsqu'ils
-        réalisent des travaux entrant dans le champ de la responsabilité décennale. L'attestation
-        d'assurance doit pouvoir être présentée au maître d'ouvrage avant le démarrage des travaux.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Cette obligation concerne les professionnels du bâtiment quel que soit leur statut
-        juridique, y compris les micro-entrepreneurs lorsque leur activité est soumise à cette
-        obligation. L'article L. 241-1 du Code des assurances encadre cette obligation d'assurance.
-    </p>
-</div>
 
-<!-- FAQ 13 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
-        Quel est le tarif d'une assurance décennale pour un plombier en France ?
-    </h3>
-    <p class="text-base text-gray-700">
-        Le tarif d'une assurance décennale plombier varie généralement selon le chiffre d'affaires,
-        l'expérience professionnelle, la nature des travaux réalisés, la zone d'activité et
-        l'historique de sinistres. Pour certains profils, les cotisations peuvent se situer autour
-        de quelques centaines à plusieurs milliers d'euros par an.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Un plombier débutant avec un chiffre d'affaires limité peut bénéficier d'un tarif plus
-        accessible, tandis que les activités comportant des travaux plus techniques ou présentant
-        des risques importants peuvent entraîner une cotisation plus élevée. Comparer plusieurs
-        offres permet de vérifier à la fois le prix, les garanties, les franchises et les exclusions.
-    </p>
-</div>
+<!-- ==========================================================
+     FAQ CSS
+     ========================================================== -->
 
-<!-- FAQ 14 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-user-slash text-yellow-500 mr-2"></i>
-        Un plombier résilié pour non-paiement peut-il retrouver une assurance décennale ?
-    </h3>
-    <p class="text-base text-gray-700">
-        <strong>Oui.</strong> Un plombier dont le contrat a été résilié pour non-paiement peut
-        rechercher une nouvelle assurance décennale. Cependant, une résiliation peut rendre
-        l'accès au marché classique plus difficile et entraîner des conditions tarifaires ou
-        contractuelles particulières.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Certains assureurs et courtiers spécialisés étudient les profils ayant connu une
-        résiliation. Pour maximiser ses chances, il est important de présenter un dossier complet,
-        de régulariser sa situation lorsque cela est possible et de fournir l'historique des
-        assurances et des sinistres. Nos experts peuvent vous accompagner dans la recherche
-        d'une solution adaptée à votre situation.
-    </p>
-</div>
+<style>
 
-<!-- FAQ 15 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-bolt text-yellow-500 mr-2"></i>
-        Comment souscrire une assurance décennale plombier rapidement avant un chantier urgent ?
-    </h3>
-    <p class="text-base text-gray-700">
-        Pour souscrire rapidement une assurance décennale plombier, il est conseillé de préparer
-        dès le départ les documents nécessaires : justificatif d'immatriculation de l'entreprise,
-        descriptif précis des activités, chiffre d'affaires, expérience professionnelle et
-        historique des sinistres.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Certains assureurs peuvent étudier un dossier rapidement et délivrer une attestation
-        après validation du dossier et du contrat. La rapidité dépend principalement de la
-        complétude des informations transmises. Une attestation provisoire ne couvre que la
-        période et les activités prévues par le contrat concerné.
-    </p>
-</div>
+    /* Question clickable */
+    .faq-question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        cursor: pointer;
+        user-select: none;
+    }
 
-<!-- FAQ 16 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
-        Quelle différence entre l'assurance décennale plombier et la responsabilité civile professionnelle ?
-    </h3>
-    <p class="text-base text-gray-700">
-        L'assurance décennale et la responsabilité civile professionnelle sont deux garanties
-        différentes mais complémentaires. La garantie décennale couvre, dans les conditions
-        prévues par la loi, certains dommages affectant un ouvrage après sa réception pendant
-        une période de dix ans.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        La RC professionnelle intervient notamment pour les dommages causés aux tiers ou aux
-        biens pendant l'activité professionnelle. Par exemple, si un plombier endommage
-        accidentellement un équipement ou une canalisation pendant un chantier, la RC
-        professionnelle peut être concernée. En revanche, un désordre relevant de la
-        responsabilité décennale après réception peut relever de l'assurance décennale.
-    </p>
-</div>
 
-<!-- FAQ 17 -->
-<div class="border border-gray-200 rounded-xl p-6">
-    <h3 class="text-lg font-bold text-gray-900 mb-3">
-        <i class="fas fa-ban text-yellow-500 mr-2"></i>
-        Quelles exclusions fréquentes peut-on trouver dans un contrat d'assurance décennale plombier ?
-    </h3>
-    <p class="text-base text-gray-700">
-        Les exclusions dépendent du contrat et des conditions générales et particulières.
-        Elles peuvent notamment concerner certaines activités ou certains travaux qui n'ont
-        pas été déclarés à l'assureur, ainsi que des situations expressément exclues par
-        les conditions contractuelles.
-    </p>
-    <p class="text-base text-gray-700 mt-4">
-        Il est donc essentiel de déclarer précisément l'ensemble des activités exercées par
-        l'entreprise et de vérifier les garanties avant la souscription. Les franchises,
-        plafonds, exclusions et conditions de prise en charge doivent être examinés avec
-        attention afin de s'assurer que le contrat correspond réellement aux travaux réalisés
-        par le plombier.
-    </p>
-</div>
-                        </div>
-                    </div>
+    /* Texte de la question */
+    .faq-question > span:first-child {
+        flex: 1;
+    }
+
+
+    /* Flèche */
+    .faq-arrow {
+        flex-shrink: 0;
+        color: #eab308;
+        transition: transform 0.3s ease;
+    }
+
+
+    /* Hover question */
+    .faq-question:hover {
+        color: #111827;
+    }
+
+
+    /* Réponse */
+    .faq-answer {
+        display: none;
+        padding-top: 10px;
+    }
+
+
+    /* Réponse ouverte */
+    .faq-item.active .faq-answer {
+        display: block;
+    }
+
+
+    /* Rotation flèche */
+    .faq-item.active .faq-arrow {
+        transform: rotate(180deg);
+    }
+
+
+    /* Pagination */
+    #faq-pagination button {
+        cursor: pointer;
+    }
+
+
+    #faq-pagination button:disabled {
+        cursor: not-allowed;
+    }
+
+
+    /* Mobile */
+    @media (max-width: 640px) {
+
+        .faq-question {
+            gap: 10px;
+        }
+
+        .faq-question > span:first-child {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .faq-arrow {
+            font-size: 0.85rem;
+        }
+
+    }
+
+</style>
+
+
+<!-- ==========================================================
+     FAQ JAVASCRIPT
+     ========================================================== -->
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const faqContainer =
+        document.getElementById('faq-container');
+
+    const pagination =
+        document.getElementById('faq-pagination');
+
+
+    if (!faqContainer) {
+        return;
+    }
+
+
+    /*
+     * Toutes les FAQ
+     */
+    const faqItems = Array.from(
+        faqContainer.querySelectorAll('.faq-item')
+    );
+
+
+    /*
+     * 5 questions par page
+     */
+    const itemsPerPage = 5;
+
+
+    /*
+     * Nombre total de pages
+     */
+    const totalPages = Math.ceil(
+        faqItems.length / itemsPerPage
+    );
+
+
+    /*
+     * Page actuelle
+     */
+    let currentPage = 1;
+
+
+
+    /* ==========================================================
+       ACCORDION
+       ========================================================== */
+
+    faqItems.forEach(function (faq) {
+
+        const question =
+            faq.querySelector('.faq-question');
+
+
+        if (!question) {
+            return;
+        }
+
+
+        question.addEventListener('click', function () {
+
+            /*
+             * Vérifier si cette FAQ est déjà ouverte
+             */
+            const isOpen =
+                faq.classList.contains('active');
+
+
+            /*
+             * Fermer toutes les FAQ
+             */
+            faqItems.forEach(function (item) {
+
+                item.classList.remove('active');
+
+            });
+
+
+            /*
+             * Si elle était fermée,
+             * on l'ouvre
+             */
+            if (!isOpen) {
+
+                faq.classList.add('active');
+
+            }
+
+        });
+
+    });
+
+
+
+    /* ==========================================================
+       AFFICHER UNE PAGE
+       ========================================================== */
+
+    function showPage(page) {
+
+        currentPage = page;
+
+
+        /*
+         * Fermer toutes les FAQ
+         * quand on change de page
+         */
+        faqItems.forEach(function (faq) {
+
+            faq.classList.remove('active');
+
+            faq.style.display = 'none';
+
+        });
+
+
+        /*
+         * Calcul
+         */
+        const start =
+            (page - 1) * itemsPerPage;
+
+        const end =
+            start + itemsPerPage;
+
+
+        /*
+         * Afficher les FAQ de cette page
+         */
+        faqItems
+            .slice(start, end)
+            .forEach(function (faq) {
+
+                faq.style.display = '';
+
+            });
+
+
+        /*
+         * Mettre à jour pagination
+         */
+        renderPagination();
+
+    }
+
+
+
+    /* ==========================================================
+       PAGINATION
+       ========================================================== */
+
+    function renderPagination() {
+
+        if (!pagination) {
+            return;
+        }
+
+
+        /*
+         * Nettoyer
+         */
+        pagination.innerHTML = '';
+
+
+
+        /* ======================================================
+           PREVIOUS
+           ====================================================== */
+
+        const previous =
+            document.createElement('button');
+
+        previous.type = 'button';
+
+        previous.innerHTML =
+            '<i class="fas fa-chevron-left"></i>';
+
+        previous.setAttribute(
+            'aria-label',
+            'Page précédente'
+        );
+
+        previous.className = `
+            w-10 h-10
+            rounded-lg
+            border
+            flex
+            items-center
+            justify-center
+            transition-all
+            duration-200
+            ${
+                currentPage === 1
+                    ? 'border-gray-200 text-gray-300 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-yellow-400 hover:text-white hover:border-yellow-400 cursor-pointer'
+            }
+        `;
+
+        previous.disabled =
+            currentPage === 1;
+
+
+        previous.addEventListener(
+            'click',
+            function () {
+
+                if (currentPage > 1) {
+
+                    showPage(
+                        currentPage - 1
+                    );
+
+                }
+
+            }
+        );
+
+
+        pagination.appendChild(previous);
+
+
+
+        /* ======================================================
+           NUMBERS
+           ====================================================== */
+
+        for (
+            let page = 1;
+            page <= totalPages;
+            page++
+        ) {
+
+            const button =
+                document.createElement('button');
+
+
+            button.type = 'button';
+
+
+            button.textContent =
+                page;
+
+
+            button.setAttribute(
+                'aria-label',
+                'Page ' + page
+            );
+
+
+            button.className = `
+                w-10 h-10
+                rounded-lg
+                font-semibold
+                transition-all
+                duration-200
+                ${
+                    page === currentPage
+                        ? 'bg-yellow-400 text-white shadow-md cursor-default'
+                        : 'bg-white border border-gray-300 text-gray-700 hover:bg-yellow-400 hover:text-white hover:border-yellow-400 cursor-pointer'
+                }
+            `;
+
+
+            button.addEventListener(
+                'click',
+                function () {
+
+                    if (page !== currentPage) {
+
+                        showPage(page);
+
+                    }
+
+                }
+            );
+
+
+            pagination.appendChild(button);
+
+        }
+
+
+
+        /* ======================================================
+           NEXT
+           ====================================================== */
+
+        const next =
+            document.createElement('button');
+
+
+        next.type = 'button';
+
+
+        next.innerHTML =
+            '<i class="fas fa-chevron-right"></i>';
+
+
+        next.setAttribute(
+            'aria-label',
+            'Page suivante'
+        );
+
+
+        next.className = `
+            w-10 h-10
+            rounded-lg
+            border
+            flex
+            items-center
+            justify-center
+            transition-all
+            duration-200
+            ${
+                currentPage === totalPages
+                    ? 'border-gray-200 text-gray-300 cursor-not-allowed'
+                    : 'border-gray-300 text-gray-700 hover:bg-yellow-400 hover:text-white hover:border-yellow-400 cursor-pointer'
+            }
+        `;
+
+
+        next.disabled =
+            currentPage === totalPages;
+
+
+        next.addEventListener(
+            'click',
+            function () {
+
+                if (currentPage < totalPages) {
+
+                    showPage(
+                        currentPage + 1
+                    );
+
+                }
+
+            }
+        );
+
+
+        pagination.appendChild(next);
+
+    }
+
+
+
+    /* ==========================================================
+       INITIALISATION
+       ========================================================== */
+
+    if (faqItems.length > 0) {
+
+        showPage(1);
+
+    }
+
+});
+
+</script>
 
                     <!-- ============================================================ -->
                     <!-- CTA FINAL — [OPTIMISATION] Paragraphes enrichis              -->
