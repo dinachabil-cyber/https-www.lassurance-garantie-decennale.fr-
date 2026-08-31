@@ -381,76 +381,116 @@ reprise du passé assurance décennale, antériorité assurance décennale, déc
   {{-- ================================================================ --}}
   {{-- FAQ — [OPTIMISATION] 2 nouvelles questions ajoutées               --}}
   {{-- ================================================================ --}}
-  <div class="bg-white rounded-xl shadow-xl p-8">
-    <div class="text-center">
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
+    <div class="text-center mb-8">
       <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
         Questions Fréquentes sur la Reprise du Passé
       </h2>
+      <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
     </div>
-    <div class="space-y-6">
 
-      <!-- Question 1 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
-          Quel est le coût d'une reprise du passé ?
+    <div id="faq-container" class="space-y-6">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-euro-sign text-yellow-500 mr-2"></i>
+            Quel est le coût d'une reprise du passé ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Le prix est variable. Il est généralement calculé en appliquant un pourcentage sur le montant de votre nouvelle
-          prime annuelle. Ce taux peut aller de <strong>20% à plus de 100%</strong> selon la durée du passé à reprendre et l'analyse de
-          risque de l'assureur.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Le prix est variable. Il est généralement calculé en appliquant un pourcentage sur le montant de votre nouvelle
+            prime annuelle. Ce taux peut aller de <strong>20% à plus de 100%</strong> selon la durée du passé à reprendre et l'analyse de
+            risque de l'assureur.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 2 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-question-circle text-yellow-500 mr-2"></i>
-          Que se passe-t-il si je ne souscris pas à la reprise du passé ?
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-question-circle text-yellow-500 mr-2"></i>
+            Que se passe-t-il si je ne souscris pas à la reprise du passé ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          En cas de sinistre sur un ancien chantier, vous devrez vous retourner vers votre ancien assureur. Si vous aviez
-          une période non assurée, les frais de réparation seront entièrement à votre charge, ce qui peut mettre en péril
-          votre entreprise.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            En cas de sinistre sur un ancien chantier, vous devrez vous retourner vers votre ancien assureur. Si vous aviez
+            une période non assurée, les frais de réparation seront entièrement à votre charge, ce qui peut mettre en péril
+            votre entreprise.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 3 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
-          Quels documents sont nécessaires pour une étude ?
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
+            Quels documents sont nécessaires pour une étude ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Généralement, l'assureur vous demandera une <strong>déclaration sur l'honneur</strong> attestant de l'absence
-          de sinistre sur la période à reprendre, ainsi que vos anciennes attestations d'assurance si vous les avez.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Généralement, l'assureur vous demandera une <strong>déclaration sur l'honneur</strong> attestant de l'absence
+            de sinistre sur la période à reprendre, ainsi que vos anciennes attestations d'assurance si vous les avez.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 4 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-          La reprise du passé garantie décennale est-elle obligatoire ?
+      <!-- FAQ 4 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+            La reprise du passé garantie décennale est-elle obligatoire ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Elle n'est <strong>pas obligatoire légalement</strong>, mais elle est vivement recommandée pour éviter toute rupture de garantie et protéger votre responsabilité sur vos travaux antérieurs.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Elle n'est <strong>pas obligatoire légalement</strong>, mais elle est vivement recommandée pour éviter toute rupture de garantie et protéger votre responsabilité sur vos travaux antérieurs.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 5 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-history text-yellow-500 mr-2"></i>
-          Combien de temps peut-on reprendre avec une clause d'antériorité ?
+      <!-- FAQ 5 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-history text-yellow-500 mr-2"></i>
+            Combien de temps peut-on reprendre avec une clause d'antériorité ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          La durée de reprise varie selon les assureurs, mais elle peut généralement couvrir <strong>jusqu'à 10 ans</strong> d'activité antérieure, correspondant à la durée légale de la garantie décennale.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            La durée de reprise varie selon les assureurs, mais elle peut généralement couvrir <strong>jusqu'à 10 ans</strong> d'activité antérieure, correspondant à la durée légale de la garantie décennale.
+          </p>
+        </div>
       </div>
 
     </div>
+
   </div>
+
+  @include('layout.faq-assets')
 
   <!-- Final CTA -->
   <div class="bg-amber-400 rounded-3xl p-12 text-dark text-center relative overflow-hidden">

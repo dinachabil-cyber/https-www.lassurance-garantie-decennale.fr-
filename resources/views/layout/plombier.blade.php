@@ -253,50 +253,78 @@
   </div>
 
   <!-- Questions Fréquentes -->
-  <div class="bg-white rounded-xl shadow-xl p-8">
-    <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
-      Questions Fréquentes des Plombiers
-    </h2>
-    
-    <div class="space-y-6">
-      <!-- Question 1 -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-          L'assurance décennale est-elle obligatoire pour un plombier auto-entrepreneur ?
-        </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui, absolument.</strong> Dès que vos travaux touchent à la structure ou aux éléments indissociables du bâti 
-          (canalisations encastrées, chauffage central...), l'assurance décennale est une obligation légale, quel que soit votre statut.
-        </p>
-      </div>
-
-      <!-- Question 2 -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
-          La RC Pro est-elle incluse dans l'assurance décennale ?
-        </h3>
-        <p class="text-base text-gray-700">
-          <strong>Non</strong>, mais elle est souvent proposée en complément et est fortement recommandée. La RC Pro couvre les dommages 
-          que vous pourriez causer à des tiers pendant vos travaux (ex: un dégât des eaux chez un voisin en cours de chantier), 
-          tandis que la décennale couvre les dommages après la fin des travaux.
-        </p>
-      </div>
-
-      <!-- Question 3 -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-credit-card text-yellow-500 mr-2"></i>
-          Puis-je payer mon assurance décennale mensuellement ?
-        </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui</strong>, la plupart de nos partenaires assureurs proposent des facilités de paiement avec un fractionnement 
-          mensuel, trimestriel ou semestriel de votre prime annuelle pour mieux gérer votre trésorerie.
-        </p>
-      </div>
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
+        Questions Fréquentes des Plombiers
+      </h2>
+      <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
     </div>
+
+    <div id="faq-container" class="space-y-6">
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+            L'assurance décennale est-elle obligatoire pour un plombier auto-entrepreneur ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </h3>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui, absolument.</strong> Dès que vos travaux touchent à la structure ou aux éléments indissociables du bâti 
+            (canalisations encastrées, chauffage central...), l'assurance décennale est une obligation légale, quel que soit votre statut.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
+            La RC Pro est-elle incluse dans l'assurance décennale ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </h3>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Non</strong>, mais elle est souvent proposée en complément et est fortement recommandée. La RC Pro couvre les dommages 
+            que vous pourriez causer à des tiers pendant vos travaux (ex: un dégât des eaux chez un voisin en cours de chantier), 
+            tandis que la décennale couvre les dommages après la fin des travaux.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-credit-card text-yellow-500 mr-2"></i>
+            Puis-je payer mon assurance décennale mensuellement ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
+        </h3>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui</strong>, la plupart de nos partenaires assureurs proposent des facilités de paiement avec un fractionnement 
+            mensuel, trimestriel ou semestriel de votre prime annuelle pour mieux gérer votre trésorerie.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+
+  @include('layout.faq-assets')
 
   <!-- Final CTA -->
   <div class="bg-yellow-300 bg-yellow-300 bg-amber-400 rounded-3xl p-12 text-dark text-center relative overflow-hidden">

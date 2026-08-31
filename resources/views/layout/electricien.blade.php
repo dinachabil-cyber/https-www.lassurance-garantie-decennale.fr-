@@ -19,7 +19,6 @@
 @endsection
 
 
-
 @section('content-electricien')
 
 
@@ -365,86 +364,133 @@
   {{-- ================================================================ --}}
   {{-- FAQ — [OPTIMISATION] 3 nouvelles questions ajoutées depuis le doc --}}
   {{-- ================================================================ --}}
-  <div class="bg-white rounded-xl shadow-xl p-8">
-    <div class="text-center">
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
+    <div class="text-center mb-8">
       <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
         Questions Fréquentes des Électriciens
       </h2>
+      <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
     </div>
-    <div class="space-y-6">
 
-      <!-- Question 1 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-          La décennale est-elle obligatoire pour de la simple rénovation électrique ?
+    <div id="faq-container" class="space-y-6">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+            La décennale est-elle obligatoire pour de la simple rénovation électrique ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui.</strong> Dès que vous intervenez sur une installation existante (remplacement d'un tableau,
-          tirage de nouvelles lignes...), votre responsabilité décennale est engagée. L'assurance est donc obligatoire.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui.</strong> Dès que vous intervenez sur une installation existante (remplacement d'un tableau,
+            tirage de nouvelles lignes...), votre responsabilité décennale est engagée. L'assurance est donc obligatoire.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 2 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-graduation-cap text-yellow-500 mr-2"></i>
-          Quelles qualifications sont nécessaires pour souscrire ?
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-graduation-cap text-yellow-500 mr-2"></i>
+            Quelles qualifications sont nécessaires pour souscrire ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Les assureurs exigent généralement un <strong>diplôme dans le domaine de l'électricité</strong> (CAP, BEP, etc.)
-          <strong>OU</strong> une preuve d'expérience en tant qu'électricien salarié ou indépendant d'au moins <strong>3 ans</strong>.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Les assureurs exigent généralement un <strong>diplôme dans le domaine de l'électricité</strong> (CAP, BEP, etc.)
+            <strong>OU</strong> une preuve d'expérience en tant qu'électricien salarié ou indépendant d'au moins <strong>3 ans</strong>.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 3 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
-          La Responsabilité Civile Professionnelle (RC Pro) est-elle incluse ?
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
+            La Responsabilité Civile Professionnelle (RC Pro) est-elle incluse ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Elle est souvent proposée en option et est <strong>indispensable</strong>. La RC Pro couvre les dommages causés à des tiers
-          pendant vos travaux (ex : vous percez une canalisation par erreur). La décennale, elle, couvre les dommages
-          <strong>après</strong> la fin du chantier.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Elle est souvent proposée en option et est <strong>indispensable</strong>. La RC Pro couvre les dommages causés à des tiers
+            pendant vos travaux (ex : vous percez une canalisation par erreur). La décennale, elle, couvre les dommages
+            <strong>après</strong> la fin du chantier.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 4 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-user-graduate text-yellow-500 mr-2"></i>
-          Puis-je souscrire une garantie décennale électricien sans diplôme ?
+      <!-- FAQ 4 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-user-graduate text-yellow-500 mr-2"></i>
+            Puis-je souscrire une garantie décennale électricien sans diplôme ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Certains assureurs acceptent une expérience professionnelle significative de <strong>3 à 5 ans minimum</strong> en remplacement du diplôme, à condition de fournir des justificatifs (bulletins de salaire, attestations employeur).
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Certains assureurs acceptent une expérience professionnelle significative de <strong>3 à 5 ans minimum</strong> en remplacement du diplôme, à condition de fournir des justificatifs (bulletins de salaire, attestations employeur).
+          </p>
+        </div>
       </div>
 
-      <!-- Question 5 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
-          Quels documents pour obtenir une protection décennale installation électrique ?
+      <!-- FAQ 5 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-file-alt text-yellow-500 mr-2"></i>
+            Quels documents pour obtenir une protection décennale installation électrique ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Vous devrez fournir : votre <strong>Kbis ou inscription URSSAF</strong>, un justificatif de qualification (diplôme ou attestation d'expérience), votre dernier bilan comptable ou prévisionnel, une pièce d'identité et un RIB.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Vous devrez fournir : votre <strong>Kbis ou inscription URSSAF</strong>, un justificatif de qualification (diplôme ou attestation d'expérience), votre dernier bilan comptable ou prévisionnel, une pièce d'identité et un RIB.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 6 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-users text-yellow-500 mr-2"></i>
-          La couverture décennale travaux électricité protège-t-elle mes sous-traitants ?
+      <!-- FAQ 6 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-users text-yellow-500 mr-2"></i>
+            La couverture décennale travaux électricité protège-t-elle mes sous-traitants ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Non.</strong> Chaque professionnel doit disposer de sa propre assurance décennale. Vous devez toujours vérifier que vos sous-traitants sont correctement assurés avant de débuter le chantier.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Non.</strong> Chaque professionnel doit disposer de sa propre assurance décennale. Vous devez toujours vérifier que vos sous-traitants sont correctement assurés avant de débuter le chantier.
+          </p>
+        </div>
       </div>
 
     </div>
+
   </div>
+
+  @include('layout.faq-assets')
 
   <!-- Section NF C 15-100 -->
   <div class="rounded-xl p-8 text-white">

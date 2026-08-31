@@ -21,7 +21,6 @@ Prix Assurance Décennale Auto-Entrepreneur  Tarifs moyens par métier (700€-4
 @endsection
 
 
-
 @section('content-entrepreneur')
 
 
@@ -438,93 +437,147 @@ Prix Assurance Décennale Auto-Entrepreneur  Tarifs moyens par métier (700€-4
   {{-- ================================================================ --}}
   {{-- FAQ — [OPTIMISATION] 4 nouvelles questions ajoutées depuis le doc --}}
   {{-- ================================================================ --}}
-  <div class="bg-white rounded-xl shadow-xl p-8">
-    <div class="text-center">
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
+    <div class="text-center mb-8">
       <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
         Questions Fréquentes sur le Prix de la Décennale Auto-Entrepreneur
       </h2>
+      <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
     </div>
-    <div class="space-y-6">
 
-      <!-- Question 1 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-          Suis-je vraiment obligé de prendre une décennale en tant qu'auto-entrepreneur ?
+    <div id="faq-container" class="space-y-6">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+            Suis-je vraiment obligé de prendre une décennale en tant qu'auto-entrepreneur ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui, absolument.</strong> La loi ne fait aucune distinction de statut. Dès que vos travaux peuvent affecter la solidité de l'ouvrage ou le rendre impropre à sa destination, l'assurance décennale est obligatoire.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui, absolument.</strong> La loi ne fait aucune distinction de statut. Dès que vos travaux peuvent affecter la solidité de l'ouvrage ou le rendre impropre à sa destination, l'assurance décennale est obligatoire.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 2 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-chart-line text-yellow-500 mr-2"></i>
-          Le prix va-t-il augmenter si mon chiffre d'affaires dépasse les seuils ?
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-chart-line text-yellow-500 mr-2"></i>
+            Le prix va-t-il augmenter si mon chiffre d'affaires dépasse les seuils ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui.</strong> Vous devez informer votre assureur de toute évolution de votre chiffre d'affaires. La prime sera alors réajustée en conséquence (régularisation).
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui.</strong> Vous devez informer votre assureur de toute évolution de votre chiffre d'affaires. La prime sera alors réajustée en conséquence (régularisation).
+          </p>
+        </div>
       </div>
 
-      <!-- Question 3 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-credit-card text-yellow-500 mr-2"></i>
-          Puis-je payer ma cotisation en plusieurs fois ?
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-credit-card text-yellow-500 mr-2"></i>
+            Puis-je payer ma cotisation en plusieurs fois ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui.</strong> La plupart des assureurs proposent des paiements mensualisés ou trimestriels pour vous aider à gérer votre trésorerie, parfois avec de légers frais de fractionnement.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui.</strong> La plupart des assureurs proposent des paiements mensualisés ou trimestriels pour vous aider à gérer votre trésorerie, parfois avec de légers frais de fractionnement.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 4 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-tag text-yellow-500 mr-2"></i>
-          Existe-t-il une assurance décennale auto-entrepreneur pas cher ?
+      <!-- FAQ 4 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-tag text-yellow-500 mr-2"></i>
+            Existe-t-il une assurance décennale auto-entrepreneur pas cher ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Le prix de la décennale BTP auto-entrepreneur varie selon les assureurs. Comparer les offres permet de trouver le <strong>meilleur rapport qualité-prix</strong> adapté à votre activité et votre budget.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Le prix de la décennale BTP auto-entrepreneur varie selon les assureurs. Comparer les offres permet de trouver le <strong>meilleur rapport qualité-prix</strong> adapté à votre activité et votre budget.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 5 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-bolt text-yellow-500 mr-2"></i>
-          Comment obtenir un devis assurance décennale auto-entrepreneur rapidement ?
+      <!-- FAQ 5 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+            Comment obtenir un devis assurance décennale auto-entrepreneur rapidement ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          En remplissant notre formulaire en ligne, vous pouvez recevoir plusieurs devis personnalisés en <strong>moins de 48 heures</strong> et choisir l'offre la plus avantageuse.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            En remplissant notre formulaire en ligne, vous pouvez recevoir plusieurs devis personnalisés en <strong>moins de 48 heures</strong> et choisir l'offre la plus avantageuse.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 6 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-user-graduate text-yellow-500 mr-2"></i>
-          Le tarif est-il différent pour un débutant sans expérience ?
+      <!-- FAQ 6 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-user-graduate text-yellow-500 mr-2"></i>
+            Le tarif est-il différent pour un débutant sans expérience ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Oui, les auto-entrepreneurs débutants paient généralement une prime plus élevée en raison du risque perçu plus important. L'écart peut atteindre <strong>20 à 30%</strong> par rapport à un professionnel expérimenté.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Oui, les auto-entrepreneurs débutants paient généralement une prime plus élevée en raison du risque perçu plus important. L'écart peut atteindre <strong>20 à 30%</strong> par rapport à un professionnel expérimenté.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 7 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
-          Puis-je changer d'assureur si je trouve moins cher ailleurs ?
+      <!-- FAQ 7 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-exchange-alt text-yellow-500 mr-2"></i>
+            Puis-je changer d'assureur si je trouve moins cher ailleurs ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Oui, vous pouvez résilier votre contrat à l'échéance annuelle ou à tout moment après la première année grâce à la <strong>loi Hamon</strong>, sous réserve de respecter un préavis.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Oui, vous pouvez résilier votre contrat à l'échéance annuelle ou à tout moment après la première année grâce à la <strong>loi Hamon</strong>, sous réserve de respecter un préavis.
+          </p>
+        </div>
       </div>
 
     </div>
+
   </div>
+
+  @include('layout.faq-assets')
 
   <!-- Section expertise -->
   <div class="rounded-xl p-8 text-white">

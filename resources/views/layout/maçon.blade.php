@@ -19,7 +19,6 @@
 @endsection
 
 
-
 @section('content-maçon')
 
 </script>
@@ -377,77 +376,117 @@
   {{-- ================================================================ --}}
   {{-- FAQ — [OPTIMISATION] 2 nouvelles questions ajoutées depuis le doc --}}
   {{-- ================================================================ --}}
-  <div class="bg-white rounded-xl shadow-xl p-8">
-    <div class="text-center">
+  <div class="bg-white rounded-xl shadow-xl p-8 mb-12 lg:mb-20">
+    <div class="text-center mb-8">
       <h2 class="text-2xl md:text-3xl font-bold text-gradient mb-8">
         Questions Fréquentes des Maçons
       </h2>
+      <div class="w-16 lg:w-24 h-1 bg-amber-400 mx-auto rounded-full"></div>
     </div>
-    <div class="space-y-6">
 
-      <!-- Question 1 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-gavel text-yellow-500 mr-2"></i>
-          La décennale est-elle obligatoire pour des petits travaux de maçonnerie ?
+    <div id="faq-container" class="space-y-6">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-gavel text-yellow-500 mr-2"></i>
+            La décennale est-elle obligatoire pour des petits travaux de maçonnerie ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Oui</strong>, dès que votre intervention peut affecter la solidité de l'ouvrage ou l'un de ses éléments
-          indissociables. L'ouverture d'un mur porteur ou la création d'une chape, par exemple, sont des actes qui exigent
-          obligatoirement une couverture décennale.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Oui</strong>, dès que votre intervention peut affecter la solidité de l'ouvrage ou l'un de ses éléments
+            indissociables. L'ouverture d'un mur porteur ou la création d'une chape, par exemple, sont des actes qui exigent
+            obligatoirement une couverture décennale.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 2 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-graduation-cap text-yellow-500 mr-2"></i>
-          Quelles qualifications sont nécessaires pour être assuré en tant que maçon ?
+      <!-- FAQ 2 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-graduation-cap text-yellow-500 mr-2"></i>
+            Quelles qualifications sont nécessaires pour être assuré en tant que maçon ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Les assureurs demandent une justification de votre compétence professionnelle. Généralement, il s'agit d'un
-          <strong>diplôme (CAP/BEP Maçonnerie)</strong> ou d'une preuve d'expérience professionnelle d'au moins
-          <strong>3 ans</strong> dans le domaine.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Les assureurs demandent une justification de votre compétence professionnelle. Généralement, il s'agit d'un
+            <strong>diplôme (CAP/BEP Maçonnerie)</strong> ou d'une preuve d'expérience professionnelle d'au moins
+            <strong>3 ans</strong> dans le domaine.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 3 — existante -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
-          La Responsabilité Civile Professionnelle (RC Pro) est-elle suffisante ?
+      <!-- FAQ 3 -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-shield-alt text-yellow-500 mr-2"></i>
+            La Responsabilité Civile Professionnelle (RC Pro) est-elle suffisante ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          <strong>Non</strong>, elle est complémentaire mais ne remplace pas la décennale. La RC Pro couvre les dommages
-          causés aux tiers pendant vos travaux (ex : la chute d'un outil sur une voiture). La décennale couvre les malfaçons
-          qui apparaissent après la fin du chantier.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            <strong>Non</strong>, elle est complémentaire mais ne remplace pas la décennale. La RC Pro couvre les dommages
+            causés aux tiers pendant vos travaux (ex : la chute d'un outil sur une voiture). La décennale couvre les malfaçons
+            qui apparaissent après la fin du chantier.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 4 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-hard-hat text-yellow-500 mr-2"></i>
-          Que couvre précisément la garantie décennale maçonnerie pour le gros œuvre ?
+      <!-- FAQ 4 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-hard-hat text-yellow-500 mr-2"></i>
+            Que couvre précisément la garantie décennale maçonnerie pour le gros œuvre ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          La <strong>couverture décennale travaux maçonnerie</strong> protège contre tous les vices et malfaçons affectant la solidité de l'ouvrage ou le rendant impropre à sa destination pendant <strong>10 ans</strong> après réception des travaux.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            La <strong>couverture décennale travaux maçonnerie</strong> protège contre tous les vices et malfaçons affectant la solidité de l'ouvrage ou le rendant impropre à sa destination pendant <strong>10 ans</strong> après réception des travaux.
+          </p>
+        </div>
       </div>
 
-      <!-- Question 5 — [NOUVEAU] -->
-      <div class="border border-gray-200 rounded-xl p-6">
-        <h3 class="text-lg font-bold text-gray-900 mb-3">
-          <i class="fas fa-bolt text-yellow-500 mr-2"></i>
-          Comment obtenir rapidement une attestation décennale maçon ?
+      <!-- FAQ 5 — [NOUVEAU] -->
+      <div class="faq-item border border-gray-200 rounded-xl p-6">
+        <h3 class="faq-question text-lg font-bold text-gray-900 mb-3">
+          <span>
+            <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+            Comment obtenir rapidement une attestation décennale maçon ?
+          </span>
+          <span class="faq-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </span>
         </h3>
-        <p class="text-base text-gray-700">
-          Une fois votre dossier complet transmis et votre contrat validé, l'<strong>attestation décennale maçon</strong> vous est délivrée <strong>immédiatement par courriel</strong>, vous permettant de démarrer vos chantiers sans délai.
-        </p>
+        <div class="faq-answer">
+          <p class="text-base text-gray-700">
+            Une fois votre dossier complet transmis et votre contrat validé, l'<strong>attestation décennale maçon</strong> vous est délivrée <strong>immédiatement par courriel</strong>, vous permettant de démarrer vos chantiers sans délai.
+          </p>
+        </div>
       </div>
 
     </div>
+
   </div>
+
+  @include('layout.faq-assets')
 
   <!-- Section expertise -->
   <div class="rounded-xl p-8 text-white">
