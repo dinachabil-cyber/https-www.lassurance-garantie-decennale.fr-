@@ -108,7 +108,7 @@ reprise du passé assurance décennale, antériorité assurance décennale, déc
           </h3>
         </div>
         <div class="p-6 flex-1 flex flex-col overflow-y-auto">
-          <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" onsubmit="return handleFormSubmit(event)" action="/" method="POST">
+          <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" action="/" method="POST">
             @csrf
             <div class="flex-1 space-y-3">
               <div>

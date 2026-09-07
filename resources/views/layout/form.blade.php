@@ -19,9 +19,11 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
 <meta property="og:description" content="Souscrivez votre assurance décennale en ligne en quelques clics. Devis instantané, tarifs négociés, attestation provisoire express. Tous métiers du bâtiment couverts.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.lassurance-garantie-decennale.fr">
+<meta property="og:image" content="https://www.lassurance-garantie-decennale.fr/image/assurance-decinale.jpg">
 @endsection
 
 @section('contentform')
+
 
 
 <main id="simulation" class="w-full">
@@ -53,23 +55,39 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                         </h3>
                     </div>
                     <div class="p-6 flex-1 flex flex-col overflow-y-auto">
-                        <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" onsubmit="return handleFormSubmit(event)" action="/" method="POST">
+                        <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" action="/" method="POST">
                             @csrf
+                            @if($errors->any())
+                                <div class="bg-red-50 border border-red-200 text-red-700 text-xs p-3 rounded-md mb-3">
+                                    @foreach($errors->all() as $error)
+                                        <div>{{ $error }}</div>
+                                    @endforeach
+                                </div>
+                            @endif
                             <div class="flex-1 space-y-3">
                                 <div>
-                                    <input type="text" name="nom" id="nom"
+                                    <input type="text" name="nom" id="nom" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Nom..." />
+                                    @error('nom')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
-                                    <input type="text" name="prenom" id="prenom"
+                                    <input type="text" name="prenom" id="prenom" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Prénom..." />
+                                    @error('prenom')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
-                                    <input type="text" name="raison_sociale" id="raison_sociale"
+                                    <input type="text" name="raison_sociale" id="raison_sociale" maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Raison sociale..." />
+                                    @error('raison_sociale')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
                                     <select id="myselect00" name="demarrage"
@@ -79,6 +97,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                         <option value="OUI">OUI</option>
                                         <option value="NON">NON</option>
                                     </select>
+                                    @error('demarrage')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
                                     <select id="myselect0" name="assure"
@@ -88,6 +109,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                         <option value="OUI">OUI</option>
                                         <option value="NON">NON</option>
                                     </select>
+                                    @error('assure')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
                                     <select id="myselect1" name="ancienne"
@@ -97,6 +121,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                         <option value="OUI">OUI</option>
                                         <option value="NON">NON</option>
                                     </select>
+                                    @error('ancienne')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div id="motif-container">
                                     <select id="myselect2" name="motif"
@@ -108,21 +135,33 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                         <option value="Non paiement">Non paiement</option>
                                         <option value="Amiable">Amiable</option>
                                     </select>
+                                    @error('motif')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
-                                    <input type="text" id="code" name="code" maxlength="5"
+                                    <input type="text" id="code" name="code" maxlength="5" pattern="[0-9]+"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Code Postal..." />
+                                    @error('code')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
-                                    <input type="email" id="email" name="email"
+                                    <input type="email" id="email" name="email" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Email..." />
+                                    @error('email')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <div>
-                                    <input type="text" id="tele" name="tele" maxlength="10"
+                                    <input type="text" id="tele" name="tele" required maxlength="10" minlength="10" pattern="[0-9]+"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         placeholder="Téléphone..." />
+                                    @error('tele')
+                                        <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                                    @enderror
                                 </div>
                                 <p class="text-[10px] text-gray-600 bg-white/80 p-2 rounded-md border border-gray-200">
                                     En cliquant sur 'Comparer', vous acceptez de transmettre vos informations à AKSAM ASSURANCES, qui accepte de les utiliser conformément à sa politique de confidentialité dans le but de vous fournir des propositions de devis d'assurances adapté à votre recherche
@@ -358,8 +397,7 @@ instantané, comparez les tarifs et souscrivez directement depuis votre ordinate
                             </div>
                         </div>
                     </div>
-
-                    <!-- ==========================================================
+     <!-- ==========================================================
      FAQ SECTION
      ========================================================== -->
 
@@ -969,7 +1007,17 @@ instantané, comparez les tarifs et souscrivez directement depuis votre ordinate
         </div>
 
     </div>
- </div>
+
+
+    <!-- ======================================================
+         PAGINATION
+         ====================================================== -->
+
+    <div
+        id="faq-pagination"
+        class="flex justify-center items-center gap-2 mt-10 flex-wrap">
+    </div>
+</div>
 
 
 @include("layout.faq-assets")
@@ -1001,10 +1049,55 @@ instantané, comparez les tarifs et souscrivez directement depuis votre ordinate
 
                 </div>
             </div>
+
+             <!-- Partenaires section -->
+				<div class="mt-10 mb-2">
+					<h3 class="text-center text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Nos compagnies partenaires</h3>
+					<div class="partenaires-carousel-wrapper">
+						<div class="partenaires-carousel-track">
+							<!-- Logos originaux -->
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/allianz.png') }}" alt="Allianz" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/april.jpg') }}" alt="April" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/axa.png') }}" alt="axa" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/eurodommage.png') }}" alt="Eurodommage" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/sollyzar.png') }}" alt="Sollyzar" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/zephir.png') }}" alt="Zephir" loading="lazy">
+							</div>
+							<!-- Duplication pour boucle infinie -->
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/allianz.png') }}" alt="Allianz" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/april.jpg') }}" alt="April" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/axa.png') }}" alt="axa" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/eurodommage.png') }}" alt="Eurodommage" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/sollyzar.png') }}" alt="Sollyzar" loading="lazy">
+							</div>
+							<div class="partenaires-logo-item">
+								<img src="{{ asset('/images/partenaire/zephir.png') }}" alt="Zephir" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</div>		 
         </div>
     </section>
-
- 
 
 </main>
 

@@ -108,7 +108,7 @@ Prix Assurance Décennale Auto-Entrepreneur  Tarifs moyens par métier (700€-4
           </h3>
         </div>
         <div class="p-6 flex-1 flex flex-col overflow-y-auto">
-          <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" onsubmit="return handleFormSubmit(event)" action="/" method="POST">
+          <form id="simulationForm" class="space-y-3 flex-1 flex flex-col" action="/" method="POST">
             @csrf
             <div class="flex-1 space-y-3">
               <div>

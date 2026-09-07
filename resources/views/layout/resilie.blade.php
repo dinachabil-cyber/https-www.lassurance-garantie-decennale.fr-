@@ -137,7 +137,7 @@
            <form
              id="simulationForm"
              class="space-y-3 flex-1 flex flex-col"
-             onsubmit="return handleFormSubmit(event)" action="/" method="POST">
+             action="/" method="POST">
              @csrf
              <!-- Personal Info -->
              <div class="flex-1 space-y-3 ">

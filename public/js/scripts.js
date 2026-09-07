@@ -1,30 +1,4 @@
-/* ===== SCRIPTS.JS CORRIGÉ ===== */
-
-// Configuration Tailwind CSS
-if (typeof tailwind !== 'undefined') {
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    primary: "#1E3A8A",
-                    secondary: "#38BDF8",
-                    accent: "#F59E0B",
-                    jaune: "#FFCE1B",
-                    success: "#10B981",
-                    warning: "#FB923C",
-                    danger: "#EF4444",
-                    dark: "#0F172A",
-                    light: "#F8FAFC",
-                    surface: "#FFFFFF",
-                    surfaceHover: "#F1F5F9"
-                },
-                fontFamily: {
-                    sans: ["Plus Jakarta Sans", "sans-serif"]
-                }
-            }
-        }
-    };
-}
+/* ===== SCRIPTS.JS ===== */
 
 // Variables globales
 const gaProperty = 'GTM-PTHF4V94';
@@ -113,45 +87,11 @@ function createCookieBanner() {
 // ===== GESTION DES FORMULAIRES =====
 
 function handleFormSubmit(event) {
-    event.preventDefault();
-
     const button = event.target.querySelector('button[type="submit"]');
-    const originalHTML = button.innerHTML;
-    const form = event.target;
-
-    button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Traitement en cours...';
-    button.disabled = true;
-
-    fetch(form.action || window.location.href, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-        }
-    }).then(response => {
-        if (response.ok) {
-            button.innerHTML = '<i class="fas fa-check mr-2"></i>Devis envoyé avec succès !';
-            button.className = button.className.replace('from-yellow-400 to-yellow-500', 'from-green-400 to-green-500');
-
-            setTimeout(() => {
-                window.location.href = '/reponse';
-            }, 2000);
-        } else {
-            throw new Error('Erreur de soumission');
-        }
-    }).catch(error => {
-        console.error('Erreur:', error);
-        button.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i>Erreur, veuillez réessayer';
-        button.className = button.className.replace('from-yellow-400 to-yellow-500', 'from-red-400 to-red-500');
-
-        setTimeout(() => {
-            button.innerHTML = originalHTML;
-            button.className = button.className.replace('from-red-400 to-red-500', 'from-yellow-400 to-yellow-500');
-            button.disabled = false;
-        }, 3000);
-    });
-
-    return false;
+    if (button) {
+        button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Traitement en cours...';
+        button.disabled = true;
+    }
 }
 
 function showDiv(select) {
@@ -290,22 +230,20 @@ function initGSAPAnimations() {
     }
 }
 
-// ===== FONCTION DE DÉBOGAGE POUR LES CARTES =====
+// ===== VÉRIFICATION DE VISIBILITÉ DES CARTES =====
 
 function debugCards() {
     const cards = document.querySelectorAll('.card-hover');
-    console.log(`🔍 Nombre de cartes trouvées: ${cards.length}`);
+    let hasHidden = false;
 
-    cards.forEach((card, index) => {
-        console.log(`Carte ${index + 1}:`, {
-            visible: card.offsetParent !== null,
-            display: getComputedStyle(card).display,
-            opacity: getComputedStyle(card).opacity,
-            visibility: getComputedStyle(card).visibility,
-            height: card.offsetHeight,
-            width: card.offsetWidth
-        });
+    cards.forEach(card => {
+        const styles = getComputedStyle(card);
+        if (styles.display === 'none' || styles.visibility === 'hidden') {
+            hasHidden = true;
+        }
     });
+
+    return hasHidden;
 }
 
 // ===== FONCTION POUR FORCER L'AFFICHAGE DES CARTES =====
@@ -318,7 +256,6 @@ function forceShowCards() {
         card.style.opacity = '1';
         card.style.transform = 'none';
     });
-    console.log('✅ Cartes forcées à être visibles');
 }
 
 // ===== GESTIONNAIRES D'ÉVÉNEMENTS =====
@@ -352,7 +289,6 @@ function initEventListeners() {
 // ===== INITIALISATION PRINCIPALE =====
 
 function initApp() {
-    console.log('🚀 Initialisation de l\'application...');
 
     // Initialiser Google Analytics
     initGoogleAnalytics();
@@ -366,34 +302,20 @@ function initApp() {
     // Initialiser les gestionnaires d'événements
     initEventListeners();
 
-    // Vérifier les cartes après un délai
-    setTimeout(() => {
-        debugCards();
-        // Forcer l'affichage si nécessaire
-        const hiddenCards = document.querySelectorAll('.card-hover[style*="opacity: 0"], .card-hover[style*="display: none"]');
-        if (hiddenCards.length > 0) {
-            console.warn('⚠️ Cartes cachées détectées, correction en cours...');
-            forceShowCards();
-        }
-    }, 500);
-
-    // Initialiser les animations GSAP après un délai
+    // Initialiser les animations GSAP
     setTimeout(initGSAPAnimations, 100);
 
-    console.log('✅ Application initialisée avec succès');
+    // Vérification après la fin des animations (2s) pour les cas où GSAP échoue
+    setTimeout(() => {
+        if (debugCards()) {
+            forceShowCards();
+        }
+    }, 2000);
 }
 
 // ===== EVENT LISTENERS GLOBAUX =====
 
 document.addEventListener('DOMContentLoaded', initApp);
-
-// Vérification supplémentaire après chargement complet
-window.addEventListener('load', function () {
-    setTimeout(() => {
-        debugCards();
-        forceShowCards();
-    }, 1000);
-});
 
 window.addEventListener('error', function (e) {
     console.error('Erreur JavaScript:', e.error);
