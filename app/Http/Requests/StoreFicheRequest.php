@@ -15,13 +15,13 @@ class StoreFicheRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nom'              => ['required', 'string', 'max:255', new NoSpam()],
-            'prenom'           => ['required', 'string', 'max:255', new NoSpam()],
-            'raison_sociale'   => ['nullable', 'string', 'max:255', new NoSpam()],
+            'nom'              => ['required', 'string', 'max:255', new NoSpam(['alphaOnly' => true])],
+            'prenom'           => ['required', 'string', 'max:255', new NoSpam(['alphaOnly' => true])],
+            'raison_sociale'   => ['nullable', 'string', 'max:255', new NoSpam(['alphaOnly' => true])],
             'activite'         => ['nullable', 'in:OUI,NON'],
             'assure'           => ['nullable', 'in:OUI,NON'],
             'ancienne'         => ['nullable', 'in:OUI,NON'],
-            'motif'            => ['nullable', 'string', 'max:255', new NoSpam()],
+            'motif'            => ['nullable', 'string', 'max:255', new NoSpam(['alphaOnly' => true])],
             'code'             => ['nullable', 'string', 'max:5', 'regex:/^[0-9]+$/'],
             'email'            => ['required', 'email', 'max:255', new NoSpam()],
             'tele'             => ['required', 'string', 'max:10', 'min:10', 'regex:/^[0-9]+$/'],
