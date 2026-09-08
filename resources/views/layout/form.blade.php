@@ -68,7 +68,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="text" name="nom" id="nom" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Nom..." />
+                                        placeholder="Nom..."
+                                        value="{{ old('nom') }}" />
                                     @error('nom')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror
@@ -76,7 +77,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="text" name="prenom" id="prenom" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Prénom..." />
+                                        placeholder="Prénom..."
+                                        value="{{ old('prenom') }}" />
                                     @error('prenom')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror
@@ -84,7 +86,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="text" name="raison_sociale" id="raison_sociale" maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Raison sociale..." />
+                                        placeholder="Raison sociale..."
+                                        value="{{ old('raison_sociale') }}" />
                                     @error('raison_sociale')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror
@@ -93,9 +96,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                     <select id="myselect00" name="demarrage"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         title="Démarrage d'activité">
-                                        <option value="" selected>Démarrage d'activité</option>
-                                        <option value="OUI">OUI</option>
-                                        <option value="NON">NON</option>
+                                        <option value="" @selected(!old('demarrage'))>Démarrage d'activité</option>
+                                        <option value="OUI" @selected(old('demarrage') == 'OUI')>OUI</option>
+                                        <option value="NON" @selected(old('demarrage') == 'NON')>NON</option>
                                     </select>
                                     @error('demarrage')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -105,9 +108,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                     <select id="myselect0" name="assure"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         title="Activité assurée actuellement">
-                                        <option value="" selected>Activité assurée actuellement</option>
-                                        <option value="OUI">OUI</option>
-                                        <option value="NON">NON</option>
+                                        <option value="" @selected(!old('assure'))>Activité assurée actuellement</option>
+                                        <option value="OUI" @selected(old('assure') == 'OUI')>OUI</option>
+                                        <option value="NON" @selected(old('assure') == 'NON')>NON</option>
                                     </select>
                                     @error('assure')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -117,9 +120,9 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                     <select id="myselect1" name="ancienne"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         title="Assurance résilié">
-                                        <option value="" selected>Assurance résilié</option>
-                                        <option value="OUI">OUI</option>
-                                        <option value="NON">NON</option>
+                                        <option value="" @selected(!old('ancienne'))>Assurance résilié</option>
+                                        <option value="OUI" @selected(old('ancienne') == 'OUI')>OUI</option>
+                                        <option value="NON" @selected(old('ancienne') == 'NON')>NON</option>
                                     </select>
                                     @error('ancienne')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -129,11 +132,11 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                     <select id="myselect2" name="motif"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
                                         title="Motif résiliation">
-                                        <option value="" selected>Motif résiliation</option>
-                                        <option value="Echéance">Echéance</option>
-                                        <option value="Sinistre">Sinistre</option>
-                                        <option value="Non paiement">Non paiement</option>
-                                        <option value="Amiable">Amiable</option>
+                                        <option value="" @selected(!old('motif'))>Motif résiliation</option>
+                                        <option value="Echéance" @selected(old('motif') == 'Echéance')>Echéance</option>
+                                        <option value="Sinistre" @selected(old('motif') == 'Sinistre')>Sinistre</option>
+                                        <option value="Non paiement" @selected(old('motif') == 'Non paiement')>Non paiement</option>
+                                        <option value="Amiable" @selected(old('motif') == 'Amiable')>Amiable</option>
                                     </select>
                                     @error('motif')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -142,7 +145,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="text" id="code" name="code" maxlength="5" pattern="[0-9]+"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Code Postal..." />
+                                        placeholder="Code Postal..."
+                                        value="{{ old('code') }}" />
                                     @error('code')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror
@@ -150,7 +154,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="email" id="email" name="email" required maxlength="255"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Email..." />
+                                        placeholder="Email..."
+                                        value="{{ old('email') }}" />
                                     @error('email')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror
@@ -158,7 +163,8 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                                 <div>
                                     <input type="text" id="tele" name="tele" required maxlength="10" minlength="10" pattern="[0-9]+"
                                         class="w-full px-3 py-2 border border-gray-200 rounded-md focus:ring-1 focus:ring-accent focus:border-accent transition-colors duration-200 bg-white/80 text-sm"
-                                        placeholder="Téléphone..." />
+                                        placeholder="Téléphone..."
+                                        value="{{ old('tele') }}" />
                                     @error('tele')
                                         <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                     @enderror

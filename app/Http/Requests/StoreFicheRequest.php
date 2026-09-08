@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Rules\NoSpamRule;
+use App\Validator\NoSpam;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreFicheRequest extends FormRequest
@@ -15,15 +15,15 @@ class StoreFicheRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nom'              => ['required', 'string', 'max:255', new NoSpamRule()],
-            'prenom'           => ['required', 'string', 'max:255', new NoSpamRule()],
-            'raison_sociale'   => ['nullable', 'string', 'max:255', new NoSpamRule()],
+            'nom'              => ['required', 'string', 'max:255', new NoSpam()],
+            'prenom'           => ['required', 'string', 'max:255', new NoSpam()],
+            'raison_sociale'   => ['nullable', 'string', 'max:255', new NoSpam()],
             'activite'         => ['nullable', 'in:OUI,NON'],
             'assure'           => ['nullable', 'in:OUI,NON'],
             'ancienne'         => ['nullable', 'in:OUI,NON'],
-            'motif'            => ['nullable', 'string', 'max:255', new NoSpamRule()],
+            'motif'            => ['nullable', 'string', 'max:255', new NoSpam()],
             'code'             => ['nullable', 'string', 'max:5', 'regex:/^[0-9]+$/'],
-            'email'            => ['required', 'email', 'max:255', new NoSpamRule()],
+            'email'            => ['required', 'email', 'max:255', new NoSpam()],
             'tele'             => ['required', 'string', 'max:10', 'min:10', 'regex:/^[0-9]+$/'],
         ];
     }
