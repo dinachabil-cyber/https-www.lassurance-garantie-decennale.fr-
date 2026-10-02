@@ -37,8 +37,7 @@ assurance décennale en ligne, devis assurance décennale en ligne, souscription
                 <div class="order-2 lg:order-1 lg:col-span-2 relative flex justify-center items-center rounded-xl overflow-hidden h-96 sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[800px]" style="box-shadow: none !important; filter: none !important;">
                     <img
                         src="{{ asset('image/assurance-decinale.jpg') }}"
-                        alt="Couple souriant et satisfait tenant un relevé de pension"
-                        class="w-full h-full object-cover" />
+alt="Artisans du bâtiment sur un chantier, garantie décennale 10 ans"                        class="w-full h-full object-cover" />
                     <div class="absolute inset-0 flex flex-col justify-end items-center text-white text-center p-4 sm:p-6 lg:p-8 bg-gradient-to-t from-black/10 to-transparent">
                         <div class="inline-block p-2 rounded-lg bg-black/5"></div>
                     </div>

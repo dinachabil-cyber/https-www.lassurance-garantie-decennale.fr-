@@ -17,7 +17,7 @@
     
     <!-- Open Graph Meta Tags dynamiques -->
     @yield('og_meta')
-    <meta name="keywords" content="@yield('meta_keywords', 'Assurance décennale d ,Assurance Décennale auto-entrepreneur, Assurance décennale artisan ')">
+    <meta name="keywords" content="@yield('meta_keywords', 'Assurance décennale plomier ,Assurance Décennale chauffagiste,prix asurance décennale plomier , prix assurance décinnale chauffagiste')">
 
     
     <script src="https://cdn.tailwindcss.com"></script>
